@@ -1,5 +1,11 @@
+body {
+
+  margin-left: 50px;
+}
+
 h1 {
   padding: 10px;
+  margin: 10px 50px 10px 0px;
   color: #3A56A2;
   border: 2px solid #E53125;
   text-align: center;
@@ -17,7 +23,7 @@ ul {
 }
 
 img {
-  height: 400px;
+  height: 250px;
   border: 5px solid #E53125;
 }
 
@@ -32,4 +38,29 @@ li.important {
 
 font-weight: bold;
 
+}
+
+@media screen and (min-width: 768px) {
+
+  .column {
+
+    width: 300px;
+    float: left;
+    padding: 20px;
+  }
+
+
+  #notcolumn {
+
+    clear: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+body {
+
+    background-color: black;
+    color: white;
+  }
 }
